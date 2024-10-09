@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conversación sobre cómo mejorar el SEO y la usabilidad de la página web">
+    <meta name="keywords" content="SEO, usabilidad, página, web, HTML, URL, desarrolladores">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        picture {
+            width: 50%;
+        }
+
+        picture img {
+            width: 100%;
+
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            background-color: rgba(0, 255, 255, 0.904);
+        }
+
+        .userPic {
+            width: 5%;
+            height: 5%;
+            display: flex;
+        }
+
+        section article .pic {
+            display: flex;
+            width: 20%;
+        }
+
+        .pic img {
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            width: max-content;
+            padding: 0;
+            justify-content: space-between;
+        }
+
+        li {
+            padding: 5px 10px;
+            width: max-content;
+        }
+
+        p {
+            width: 70%;
+        }
+
+        main {
+            text-align: center;
+            padding: 5.5% 0 3% 0 ;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .section {
+            max-width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        article {
+            display: inherit;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        code{
+            font-weight: bold;
+            background-color: rgb(19, 19, 19);
+            color: rgb(18, 239, 255);
+            padding: 0 1cqi;
+            border-radius: 5px;
+        }
+
+
+        h3, h2 {
+            padding: 1.2% 0;
+        }
+
+        aside {
+            position: fixed;
+            right: 0;
+            height: 100vh;
+            min-width: 20%;
+            border-left: 1px solid black;
+            display: flex;
+            justify-content: center;
+            padding-top: 5%;
+        }
+
+        footer {
+            padding: 1.5%;
+            text-align: center;
+            background-color: black;
+            color: whitesmoke;
+            border-top: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tus Conversaciones</a></li>
+                <li><a href="#">Reciente</a></li>
+            </ul>
+        </nav>
+        <picture class="userPic">
+            <img src="/img/usuario1.webp" alt="Perfil del usuario">
+        </picture>
+    </header>
+
+
+    <main>
+        <section class="section">
+            <h2>¿Por qué es importante utilizar etiquetas semánticas para mejorar el SEO y la Accesibilidad?</h2>
+            <article>
+                <picture class="pic">
+                    <img src="img/usuario2.jpg" alt="Foto de perfil usuario">
+                </picture>
+                <h4>Daniel Hernandez</h4>
+                <h3>¿Qué es SEO?</h3>
+                <p>
+                    El SEO <em>(Search Engine Optimization)</em> es es el proceso de optimizar un sitio web y su
+                    contenido para mejorar su visibilidad y posición en los resultados de búsqueda orgánicos de los
+                    motores de búsqueda. En pocas palabras, es el proceso por el cual el buscador posiciona los
+                    resultados de una búsqueda que se generan de forma natural (sin necesidad de invertir en
+                    publicidad) "puntuando" la optimización de los <strong>elementos dentro de un sitio web</strong>
+                    (etiquetas HTML, URL amigable, optimización de imágenes y videos, etc.), la optimización de la
+                    <strong>versión móvil del sitio</strong>, la arquitectura del sitio, entre otros. Entre más
+                    aspectos del SEO se abarquen, el buscador premiará con una mejor posición al sitio o página web.
+                </p>
+                <p>
+                    En vista de que el buscador organiza los resultados basándose en cómo se estructura el HTML del
+                    sitio, es importante que, como desarrolladores, sigamos las mejores prácticas de SEO. De esta
+                    manera los sitios de internet que desarrollemos estarán mejor posicionados.
+                </p>
+            </article>
+            <article>
+                <h3>¿Qué es el HTML semántico?</h3>
+                <p>
+                    El HTML <em>(HyperText Markup Language)</em> es el lenguaje de etiquetado con el que se
+                    estructuran las páginas web. Este lenguaje consta de etiquetas conocidas como <em>"tags"</em>
+                    que especifícan el fin o qué función cumple un elemento de la página web. El buen uso de estas
+                    etiquetas mejorará el posicionamiento de nuestro sitio o página web. Para ello se utilizan
+                    etiquetas semánticas.
+                </p>
+            </article>
+            <article>
+                <h3>¿Qué son las <strong>etiquetas semánticas</strong> y cuál es su función?</h3>
+                <p>
+                    Como se mencionó
+                    anteriormente, HTML es un lenguaje de marcado que, en sus inicios, contaba con un número
+                    limitado de etiquetas para estructurar texto, divisores, hipervínculos, etc. Sin embargo, muchas
+                    de estas etiquetas eran algo ambiguas. Por ejemplo, para crear un menú de navegación, se
+                    utilizaba la etiqueta <code>&lt;div&gt;</code>, que también servía para dividir secciones de la
+                    página, delimitar pequeños bloques de contenido como artículos, o agrupar información
+                    relacionada. Esto hizo que <code>&lt;div&gt;</code> se convirtiera en una etiqueta demasiado
+                    genérica. ¿Se estaba utilizando para algo importante o secundario? Esta ambigüedad dificultaba
+                    la interpretación tanto para los motores de búsqueda como para los desarrolladores, ya que no
+                    indicaba claramente el propósito de cada bloque de contenido.
+                </p>
+                <p>
+                    Con la llegada de nuevas versiones de HTML, se introdujeron etiquetas como
+                    <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, y <code>&lt;article&gt;</code>, entre
+                    otras. Estas etiquetas tienen un propósito específico: mejorar la legibilidad del código y
+                    facilitar la comprensión del contenido tanto para los desarrolladores como para los motores de
+                    búsqueda. Estas etiquetas se conocen como etiquetas semánticas. El HTML semántico ayuda a que
+                    los motores de búsqueda no solo se concentren en palabras clave sueltas, sino también en el
+                    significado y el contexto de las palabras utilizadas. Esto les permite ofrecer resultados más
+                    precisos, incluso si el usuario no ingresa exactamente las mismas palabras que aparecen en la
+                    página. Además, los motores de búsqueda pueden priorizar ciertos contenidos según las etiquetas
+                    utilizadas, dando mayor relevancia a secciones envolventes como <code>&lt;article&gt;</code> o
+                    <code>&lt;header&gt;</code>.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <section>
+                <button type="#"><i class="fas fa-search"></i></button> <!-- Ícono de lupa (search) -->
+                <input type="search" name="buscador" id="buscador" />
+
+                <nav>
+                    
+                </nav>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        Actividad Blog
+    </footer>
+</body>
+
+</html>
